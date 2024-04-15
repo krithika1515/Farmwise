@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.category {
+    margin: 20px;
+}
+
+h2 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the dropdown sub-section */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-toggle::after {
+    content: "▼"; /* Add a down arrow indicator */
+    margin-left: 5px;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown .dropdown-menu li {
+    padding: 5px 10px;
+}
+
+/* Show the dropdown menu when the dropdown is open */
+.dropdown.show .dropdown-menu {
+    display: block;
+}
